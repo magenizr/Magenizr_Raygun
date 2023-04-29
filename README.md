@@ -36,6 +36,7 @@ Connect Magento with [Raygun](https://raygun.com) and never let another error go
 Updating dependencies
 Lock file operations: 1 install, 1 update, 0 removals
   - Locking magenizr/magento2-raygun (1.0.0)
+  - Locking mindscape/raygun4php (v2.3.1)
 ```
 
 3. And then `composer install` to install the package.
@@ -44,6 +45,7 @@ Lock file operations: 1 install, 1 update, 0 removals
 Installing dependencies from lock file (including require-dev)
 Verifying lock file contents can be installed on current platform.
 Package operations: 1 install, 0 update, 0 removals
+  - Installing mindscape/raygun4php (v2.3.1): Extracting archive
   - Installing magenizr/magento2-raygun (1.0.0): Extracting archive
 ```
 
