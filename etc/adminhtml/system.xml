@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr Raygun
+ *
+ * @category  Magenizr
+ * @copyright Copyright (c) 2023 Magenizr (https://www.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="magenizr" translate="label" sortOrder="10000">
+            <label>Magenizr</label>
+        </tab>
+        <section id="magenizr_raygun" translate="label" sortOrder="1000" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Raygun</label>
+            <tab>magenizr</tab>
+            <resource>Magenizr_Raygun::raygun</resource>
+
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General</label>
+
+                <field id="base_uri" translate="label,comment" type="text" sortOrder="20" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Base URI</label>
+                    <comment><![CDATA[Raygun API URL. Default: https://api.raygun.com]]></comment>
+                </field>
+                <field id="timeout" translate="label,comment" type="text" sortOrder="30" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Timeout</label>
+                    <comment><![CDATA[Raygun API Timeout. Default: 2.0]]></comment>
+                </field>
+                <field id="api_key" translate="label,comment" type="text" sortOrder="40" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>API Key</label>
+                    <comment>
+                        <![CDATA[Raygun API Key. See <a href="https://app.raygun.com/signup" target="_blank">https://app.raygun.com/signup</a>.]]></comment>
+                </field>
+
+            </group>
+
+            <group id="crash_reporting" translate="label,comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+            <label>Crash Reporting</label>
+
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Enable or disable Crash Reporting temporarily. Default: No]]></comment>
+                </field>
+                <field id="async" translate="label,comment" type="select" sortOrder="50" showInDefault="1"
+                       showInWebsite="1"
+                       showInStore="1">
+                    <label>Async</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[Transfer data asynchronously or synchronously to Raygun API. Default: Yes]]></comment>
+                </field>
+            </group>
+
+            <group id="real_user_monitoring" translate="label,comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Real User Monitoring</label>
+
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Enable or disable Real User Monitoring temporarily. Default: No]]></comment>
+                </field>
+                <field id="track_error" translate="label,comment" type="select" sortOrder="20"
+                       showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Track Error</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Automatically send all unhandled JavaScript errors to Raygun. Default: Yes]]></comment>
+                </field>
+                <field id="track_pulse" translate="label,comment" type="select" sortOrder="30"
+                       showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Track Pulse</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Discover, monitor and pinpoint your actual user’s behavior and experience as they browse and use Magento. Default: Yes]]></comment>
+                </field>
+                <field id="is_anonymous" translate="label,comment" type="select" sortOrder="40"
+                       showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Anonymous</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[By default, all users are pushed anonymously to Raygun. You can choose to identify your users by attaching authenticated user data to session information. Default: Yes]]></comment>
+                </field>
+                <field id="track_customer" translate="label,comment" type="select" sortOrder="50"
+                       showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Track Customer</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Include authenticated customer data such as name, email address, browser details and operating system. Default: No]]></comment>
+                </field>
+                <field id="allow_insecure_submissions" translate="label,comment" type="select" sortOrder="60"
+                       showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Allow Insecure Submissions</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Push error payloads over HTTP. This allows IE8 to send JS errors. Default: No]]></comment>
+                </field>
+                <field id="excluded_hostnames" translate="label,comment" type="text" sortOrder="70"
+                       showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Excluded Hostnames</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Prevents errors from being sent from certain domains. Default: localhost,.local,.dev,.test]]></comment>
+                </field>
+            </group>
+
+            <group id="developer" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+            <label>Developer</label>
+                <field id="debug" translate="label" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Debug</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Log to the console when sending errors. Default: No]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

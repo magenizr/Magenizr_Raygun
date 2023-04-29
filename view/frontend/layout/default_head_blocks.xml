@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr Raygun
+ *
+ * @category  Magenizr
+ * @copyright Copyright (c) 2023 Magenizr (https://www.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block class="Magenizr\Raygun\Block\RealUserMonitoring" name="magenizr_raygun_block_realusermonitoring" template="Magenizr_Raygun::head/js.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

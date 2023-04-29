@@ -1,0 +1,24 @@
+{
+    "name": "magenizr/magento2-raygun",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OSL-3.0",
+    "description": "Connect Magento with [Raygun](https://app.raygun.com/signup) and never let another error go unnoticed again. Monitor your full tech stack across both desktop and mobile, with all the information you need to take action.",
+    "keywords": [
+        "Magento 2",
+        "Error",
+        "Tracking",
+        "Alerts"
+    ],
+    "require": {
+        "mindscape/raygun4php": "^2.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magenizr\\Raygun\\": ""
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<?php if ($block->isEnabled() && !empty($block->getApiKey())): ?>
+    <script type="text/javascript">
+        !function(a,b,c,d,e,f,g,h){a.RaygunObject=e,a[e]=a[e]||function(){
+            (a[e].o=a[e].o||[]).push(arguments)},f=b.createElement(c),g=b.getElementsByTagName(c)[0],
+            f.async=1,f.src=d,g.parentNode.insertBefore(f,g),h=a.onerror,a.onerror=function(b,c,d,f,g){
+            h&&h(b,c,d,f,g),g||(g=new Error(b)),a[e].q=a[e].q||[],a[e].q.push({
+                e:g})}}(window,document,"script","//cdn.raygun.io/raygun4js/raygun.min.js","rg4js");
+    </script>
+    <script type="text/x-magento-init">
+        {
+            "*": {
+                "Magenizr_Raygun/js/init": {
+                    "apiKey": "<?= /* @noEscape */ $block->getApiKey() ?>",
+                    "isEnabled": <?= /* @noEscape */ $block->booleanToString($block->isEnabled()) ?>,
+                    "trackError": <?= /* @noEscape */ $block->booleanToString($block->getTrackError()) ?>,
+                    "trackPulse": <?= /* @noEscape */ $block->booleanToString($block->getTrackPulse()) ?>,
+                    "trackCustomer": <?= /* @noEscape */ $block->booleanToString($block->getTrackCustomer()) ?>,
+                    "isLoggedIn": <?= /* @noEscape */ $block->booleanToString($block->isLoggedIn()) ?>,
+                    "userData": <?= /* @noEscape */ $block->getUserData() ?>,
+                    "isAnonymous": <?= /* @noEscape */ $block->booleanToString($block->getIsAnonymous()) ?>,
+                    "allowInsecureSubmissions": <?= /* @noEscape */ $block->booleanToString($block->getAllowInsecureSubmissions()) ?>,
+                    "excludedHostnames": "<?= /* @noEscape */ $block->getExcludedHostnames() ?>",
+                    "debug": <?= /* @noEscape */ $block->booleanToString($block->getDebug()) ?>
+                }
+            }
+        }
+    </script>
+<?php endif; ?>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magenizr Raygun
+ *
+ * @category  Magenizr
+ * @copyright Copyright (c) 2023 Magenizr (https://www.magenizr.com)
+ * @license   https://www.magenizr.com/license Magenizr EULA
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <magenizr_raygun>
+            <general>
+                <base_uri>https://api.raygun.com</base_uri>
+                <timeout>2.0</timeout>
+                <api_key></api_key>
+            </general>
+            <crash_reporting>
+                <enabled>0</enabled>
+                <async>1</async>
+            </crash_reporting>
+            <real_user_monitoring>
+                <enabled>0</enabled>
+                <track_error>1</track_error>
+                <track_pulse>1</track_pulse>
+                <is_anonymous>1</is_anonymous>
+                <track_customer>0</track_customer>
+                <allow_insecure_submissions>0</allow_insecure_submissions>
+                <excluded_hostnames>localhost,.local,.dev,.test</excluded_hostnames>
+            </real_user_monitoring>
+            <developer>
+                <debug>0</debug>
+            </developer>
+        </magenizr_raygun>
+    </default>
+</config>
