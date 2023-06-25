@@ -1,3 +1,5 @@
+[![Latest Stable Version](http://poser.pugx.org/magenizr/magento2-raygun/v)](https://packagist.org/packages/magenizr/magento2-raygun) [![Total Downloads](http://poser.pugx.org/magenizr/magento2-raygun/downloads)](https://packagist.org/packages/magenizr/magento2-raygun) [![Latest Unstable Version](http://poser.pugx.org/magenizr/magento2-raygun/v/unstable)](https://packagist.org/packages/magenizr/magento2-raygun) [![License](http://poser.pugx.org/magenizr/magento2-raygun/license)](https://packagist.org/packages/magenizr/magento2-raygun) [![PHP Version Require](http://poser.pugx.org/magenizr/magento2-raygun/require/php)](https://packagist.org/packages/magenizr/magento2-raygun)
+
 Connect Magento with [Raygun](https://raygun.com) and never let another error go unnoticed again. Monitor your full tech stack across both desktop and mobile, with all the information you need to take action.
 
 ![Magenizr Raygun - Backend](https://images2.imgbox.com/58/7f/JZlH85Bn_o.jpeg)
@@ -6,14 +8,15 @@ Connect Magento with [Raygun](https://raygun.com) and never let another error go
 |--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | [![Magenizr Raygun](https://images2.imgbox.com/90/19/w33CZXim_o.jpeg)](https://images2.imgbox.com/90/19/w33CZXim_o.jpeg) | [![Magenizr Raygun](https://images2.imgbox.com/4a/5b/sH4sDEMp_o.jpeg)](https://images2.imgbox.com/4a/5b/sH4sDEMp_o.jpeg) ||
 
+
 ## Features
 
-- PHP Crash Reporting
+- PHP Crash Reporting ( [Details](https://raygun.com/platform/crash-reporting) )
 - Real User Monitoring ( + Pulse )
 - Customer Session tracking
 - Disable Raygun for certain domains such as `.local` or `.dev`
 - Debugging
-- 
+
 ## Usage
 
 1. Simply go to `Stores > Configuration > Magenizr > Raygun`.
