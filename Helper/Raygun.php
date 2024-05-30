@@ -4,7 +4,8 @@ declare(strict_types=1);
 /**
  * Magenizr Raygun
  *
- * @copyright   Copyright (c) 2023 Magenizr (https://www.magenizr.com)
+ * @category  Magenizr
+ * @copyright Copyright (c) 2023 Magenizr (https://magenizr.com.au)
  */
 
 namespace Magenizr\Raygun\Helper;
@@ -21,16 +22,6 @@ use Psr\Log\LoggerInterface;
 class Raygun extends AbstractHelper
 {
     /**
-     * @var \Magenizr\Raygun\Helper\Data
-     */
-    private $data;
-
-    /**
-     * @var LoggerInterface
-     */
-    private $logger;
-
-    /**
      * Init constructor
      *
      * @param Context $context
@@ -39,12 +30,10 @@ class Raygun extends AbstractHelper
      */
     public function __construct(
         Context         $context,
-        Data            $data,
-        LoggerInterface $logger
+        private Data            $data,
+        private LoggerInterface $logger
     ) {
         parent::__construct($context);
-        $this->data = $data;
-        $this->logger = $logger;
     }
 
     /**

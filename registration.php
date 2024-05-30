@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * Magenizr Raygun
  *
- * @copyright   Copyright (c) 2023 Magenizr (https://www.magenizr.com)
+ * @copyright   Copyright (c) 2023 Magenizr (https://magenizr.com.au)
  */
 
 \Magento\Framework\Component\ComponentRegistrar::register(

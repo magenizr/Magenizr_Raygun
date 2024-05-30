@@ -4,8 +4,7 @@
  * Magenizr Raygun
  *
  * @category  Magenizr
- * @copyright Copyright (c) 2023 Magenizr (https://www.magenizr.com)
- * @license   https://www.magenizr.com/license Magenizr EULA
+ * @copyright Copyright (c) 2023 Magenizr (https://magenizr.com.au)
  */
 -->
 
@@ -14,7 +13,7 @@
         <magenizr_raygun>
             <general>
                 <base_uri>https://api.raygun.com</base_uri>
-                <timeout>2.0</timeout>
+                <timeout>10</timeout>
                 <api_key></api_key>
             </general>
             <crash_reporting>

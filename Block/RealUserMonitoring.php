@@ -1,6 +1,13 @@
 <?php
 declare(strict_types=1);
 
+/**
+ * Magenizr Raygun
+ *
+ * @category  Magenizr
+ * @copyright Copyright (c) 2023 Magenizr (https://magenizr.com.au)
+ */
+
 namespace Magenizr\Raygun\Block;
 
 use Magenizr\Raygun\Helper\Data;
@@ -11,21 +18,8 @@ use Magento\Customer\Model\Session;
 class RealUserMonitoring extends Template
 {
     /**
-     * @var Data
-     */
-    private $helper;
-
-    /**
-     * @var Json
-     */
-    private $json;
-
-    /**
-     * @var Session
-     */
-    private $session;
-
-    /**
+     * Init constructor
+     *
      * @param Template\Context $context
      * @param Session $session
      * @param Data $helper
@@ -34,16 +28,12 @@ class RealUserMonitoring extends Template
      */
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        Session                                          $session,
-        Data                                             $helper,
-        Json                                             $json,
+        private Session                                  $session,
+        private Data                                     $helper,
+        private Json                                     $json,
         array                                            $data = []
     ) {
         parent::__construct($context, $data);
-
-        $this->json = $json;
-        $this->helper = $helper;
-        $this->session = $session;
     }
 
     /**

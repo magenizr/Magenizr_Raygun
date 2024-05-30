@@ -4,8 +4,7 @@
  * Magenizr Raygun
  *
  * @category  Magenizr
- * @copyright Copyright (c) 2023 Magenizr (https://www.magenizr.com)
- * @license   https://www.magenizr.com/license Magenizr EULA
+ * @copyright Copyright (c) 2023 Magenizr (https://magenizr.com.au)
  */
 -->
 
@@ -35,7 +34,7 @@
                        showInWebsite="1"
                        showInStore="1">
                     <label>Timeout</label>
-                    <comment><![CDATA[Raygun API Timeout. Default: 2.0]]></comment>
+                    <comment><![CDATA[Raygun API Timeout. Default: 10]]></comment>
                 </field>
                 <field id="api_key" translate="label,comment" type="text" sortOrder="40" showInDefault="1"
                        showInWebsite="1"
@@ -47,9 +46,10 @@
 
             </group>
 
-            <group id="crash_reporting" translate="label,comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1"
+            <group id="crash_reporting" translate="label,comment" type="text" sortOrder="20" showInDefault="1"
+                   showInWebsite="1"
                    showInStore="1">
-            <label>Crash Reporting</label>
+                <label>Crash Reporting</label>
 
                 <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
                        showInStore="1">
@@ -67,7 +67,8 @@
                 </field>
             </group>
 
-            <group id="real_user_monitoring" translate="label,comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1"
+            <group id="real_user_monitoring" translate="label,comment" type="text" sortOrder="30" showInDefault="1"
+                   showInWebsite="1"
                    showInStore="1">
                 <label>Real User Monitoring</label>
 
@@ -82,48 +83,54 @@
                        showInStore="1">
                     <label>Track Error</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment><![CDATA[Automatically send all unhandled JavaScript errors to Raygun. Default: Yes]]></comment>
+                    <comment>
+                        <![CDATA[Automatically send all unhandled JavaScript errors to Raygun. Default: Yes]]></comment>
                 </field>
                 <field id="track_pulse" translate="label,comment" type="select" sortOrder="30"
                        showInDefault="1" showInWebsite="1"
                        showInStore="1">
                     <label>Track Pulse</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment><![CDATA[Discover, monitor and pinpoint your actual user’s behavior and experience as they browse and use Magento. Default: Yes]]></comment>
+                    <comment>
+                        <![CDATA[Discover, monitor and pinpoint your actual user’s behavior and experience as they browse and use Magento. Default: Yes]]></comment>
                 </field>
                 <field id="is_anonymous" translate="label,comment" type="select" sortOrder="40"
                        showInDefault="1" showInWebsite="1"
                        showInStore="1">
                     <label>Anonymous</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment><![CDATA[By default, all users are pushed anonymously to Raygun. You can choose to identify your users by attaching authenticated user data to session information. Default: Yes]]></comment>
+                    <comment>
+                        <![CDATA[By default, all users are pushed anonymously to Raygun. You can choose to identify your users by attaching authenticated user data to session information. Default: Yes]]></comment>
                 </field>
                 <field id="track_customer" translate="label,comment" type="select" sortOrder="50"
                        showInDefault="1" showInWebsite="1"
                        showInStore="1">
                     <label>Track Customer</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment><![CDATA[Include authenticated customer data such as name, email address, browser details and operating system. Default: No]]></comment>
+                    <comment>
+                        <![CDATA[Include authenticated customer data such as name, email address, browser details and operating system. Default: No]]></comment>
                 </field>
                 <field id="allow_insecure_submissions" translate="label,comment" type="select" sortOrder="60"
                        showInDefault="1" showInWebsite="1"
                        showInStore="1">
                     <label>Allow Insecure Submissions</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment><![CDATA[Push error payloads over HTTP. This allows IE8 to send JS errors. Default: No]]></comment>
+                    <comment>
+                        <![CDATA[Push error payloads over HTTP. This allows IE8 to send JS errors. Default: No]]></comment>
                 </field>
                 <field id="excluded_hostnames" translate="label,comment" type="text" sortOrder="70"
                        showInDefault="1" showInWebsite="1"
                        showInStore="1">
                     <label>Excluded Hostnames</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment><![CDATA[Prevents errors from being sent from certain domains. Default: localhost,.local,.dev,.test]]></comment>
+                    <comment>
+                        <![CDATA[Prevents errors from being sent from certain domains. Default: localhost,.local,.dev,.test]]></comment>
                 </field>
             </group>
 
             <group id="developer" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1"
                    showInStore="1">
-            <label>Developer</label>
+                <label>Developer</label>
                 <field id="debug" translate="label" type="select" sortOrder="10"
                        showInDefault="1" showInWebsite="1"
                        showInStore="1">

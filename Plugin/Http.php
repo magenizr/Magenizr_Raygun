@@ -4,7 +4,8 @@ declare(strict_types=1);
 /**
  * Magenizr Raygun
  *
- * @copyright   Copyright (c) 2023 Magenizr (https://www.magenizr.com)
+ * @category  Magenizr
+ * @copyright Copyright (c) 2023 Magenizr (https://magenizr.com.au)
  */
 
 namespace Magenizr\Raygun\Plugin;
@@ -14,19 +15,13 @@ use Magenizr\Raygun\Helper\Raygun;
 class Http
 {
     /**
-     * @var Raygun
-     */
-    private $raygun;
-
-    /**
      * Init constructor
      *
      * @param Raygun $raygun
      */
     public function __construct(
-        Raygun $raygun
+        private Raygun $raygun
     ) {
-        $this->raygun = $raygun;
     }
 
     /**

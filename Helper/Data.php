@@ -4,7 +4,8 @@ declare(strict_types=1);
 /**
  * Magenizr Raygun
  *
- * @copyright   Copyright (c) 2023 Magenizr (https://www.magenizr.com)
+ * @category  Magenizr
+ * @copyright Copyright (c) 2023 Magenizr (https://magenizr.com.au)
  */
 
 namespace Magenizr\Raygun\Helper;
@@ -24,16 +25,6 @@ class Data extends AbstractHelper
     private $namespace = 'magenizr_raygun';
 
     /**
-     * @var LoggerInterface
-     */
-    private $logger;
-
-    /**
-     * @var ProductMetadataInterface
-     */
-    private $productMetadata;
-
-    /**
      * Init constructor
      *
      * @param Context $context
@@ -42,12 +33,10 @@ class Data extends AbstractHelper
      */
     public function __construct(
         Context                  $context,
-        ProductMetadataInterface $productMetadata,
-        LoggerInterface          $logger
+        private ProductMetadataInterface $productMetadata,
+        private LoggerInterface          $logger
     ) {
         parent::__construct($context);
-        $this->productMetadata = $productMetadata;
-        $this->logger = $logger;
     }
 
     /**
