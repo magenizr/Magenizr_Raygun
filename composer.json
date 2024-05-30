@@ -1,7 +1,7 @@
 {
     "name": "magenizr/magento2-raygun",
     "type": "magento2-module",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "license": "OSL-3.0",
     "description": "Connect Magento with [Raygun](https://app.raygun.com/signup) and never let another error go unnoticed again. Monitor your full tech stack across both desktop and mobile, with all the information you need to take action.",
     "keywords": [
