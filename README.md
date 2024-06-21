@@ -1,3 +1,5 @@
+[![Latest Stable Version](http://poser.pugx.org/magenizr/magento2-raygun/v)](https://packagist.org/packages/magenizr/magento2-raygun) [![Total Downloads](http://poser.pugx.org/magenizr/magento2-raygun/downloads)](https://packagist.org/packages/magenizr/magento2-raygun) [![Latest Unstable Version](http://poser.pugx.org/magenizr/magento2-raygun/v/unstable)](https://packagist.org/packages/magenizr/magento2-raygun) [![License](http://poser.pugx.org/magenizr/magento2-raygun/license)](https://packagist.org/packages/magenizr/magento2-raygun) [![PHP Version Require](http://poser.pugx.org/magenizr/magento2-raygun/require/php)](https://packagist.org/packages/magenizr/magento2-raygun)
+
 Connect Magento with [Raygun](https://raygun.com) and never let another error go unnoticed again. Monitor your full tech stack across both desktop and mobile, with all the information you need to take action.
 
 ![Magenizr Raygun - Backend](https://images2.imgbox.com/58/7f/JZlH85Bn_o.jpeg)
@@ -66,10 +68,6 @@ This module is available for free on [GitHub](https://github.com/magenizr).
 
 Follow us on [GitHub](https://github.com/magenizr), [Twitter](https://twitter.com/magenizr)
 and [Facebook](https://www.facebook.com/magenizr).
-
-## Roadmap
-
-- Further options for Real User Monitoring ( Frontend )
 
 ## History
 ===== 1.1.0 =====
