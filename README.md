@@ -69,16 +69,6 @@ This module is available for free on [GitHub](https://github.com/magenizr).
 Follow us on [GitHub](https://github.com/magenizr), [Twitter](https://twitter.com/magenizr)
 and [Facebook](https://www.facebook.com/magenizr).
 
-## History
-===== 1.1.0 =====
-
-* Support for 2.4.6 or later and PHP 8.1.x and 8.2.x tested
-* PHP 8 best practices added
-
-===== 1.0.0 =====
-
-* First release
-
 ## License
 
 [OSL - Open Software Licence 3.0](https://opensource.org/licenses/osl-3.0.php)
