@@ -1,5 +1,12 @@
 # Change Log
 
+## 1.1.1 `2024-07-04`
+
+### Changed
+
+- Crash Reporting and Real User Monitoring enabled by default
+- `Excluded Hostnames` moved to `Developer` section
+
 ## 1.1.0 `2024-05-30`
 
 ### Added

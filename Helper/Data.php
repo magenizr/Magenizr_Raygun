@@ -46,7 +46,7 @@ class Data extends AbstractHelper
      */
     public function isEnabled()
     {
-        return $this->getConfigFlag('crash_reporting', 'enabled');
+        return ($this->getConfigFlag('crash_reporting', 'enabled') && !empty($this->getConfig('general', 'api_key')));
     }
 
     /**

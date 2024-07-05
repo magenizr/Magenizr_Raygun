@@ -55,7 +55,7 @@
                        showInStore="1">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment><![CDATA[Enable or disable Crash Reporting temporarily. Default: No]]></comment>
+                    <comment><![CDATA[Enable or disable Crash Reporting temporarily. Default: Yes]]></comment>
                 </field>
                 <field id="async" translate="label,comment" type="select" sortOrder="50" showInDefault="1"
                        showInWebsite="1"
@@ -76,7 +76,7 @@
                        showInStore="1">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment><![CDATA[Enable or disable Real User Monitoring temporarily. Default: No]]></comment>
+                    <comment><![CDATA[Enable or disable Real User Monitoring temporarily. Default: Yes]]></comment>
                 </field>
                 <field id="track_error" translate="label,comment" type="select" sortOrder="20"
                        showInDefault="1" showInWebsite="1"
@@ -118,14 +118,6 @@
                     <comment>
                         <![CDATA[Push error payloads over HTTP. This allows IE8 to send JS errors. Default: No]]></comment>
                 </field>
-                <field id="excluded_hostnames" translate="label,comment" type="text" sortOrder="70"
-                       showInDefault="1" showInWebsite="1"
-                       showInStore="1">
-                    <label>Excluded Hostnames</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <comment>
-                        <![CDATA[Prevents errors from being sent from certain domains. Default: localhost,.local,.dev,.test]]></comment>
-                </field>
             </group>
 
             <group id="developer" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1"
@@ -137,6 +129,13 @@
                     <label>Debug</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <comment><![CDATA[Log to the console when sending errors. Default: No]]></comment>
+                </field>
+                <field id="excluded_hostnames" translate="label,comment" type="text" sortOrder="20"
+                       showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Excluded Hostnames</label>
+                    <comment>
+                        <![CDATA[Prevents errors from being sent from certain domains. Default: localhost,.local,.dev,.test]]></comment>
                 </field>
             </group>
         </section>
