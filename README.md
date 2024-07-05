@@ -5,8 +5,9 @@ Connect Magento with [Raygun](https://raygun.com) and never let another error go
 ![Magenizr Raygun - Backend](https://images2.imgbox.com/3b/12/GYCKkEYK_o.png)
 
 | [![Magenizr Raygun](https://images2.imgbox.com/b1/e3/XxDyKqGr_o.png)](https://images2.imgbox.com/b1/e3/XxDyKqGr_o.png) | [![Magenizr Raygun](https://images2.imgbox.com/c9/3b/8KUX893A_o.png)](https://images2.imgbox.com/c9/3b/8KUX893A_o.png) | [![Magenizr Raygun](https://images2.imgbox.com/d6/af/fj0dlj4L_o.png)](https://images2.imgbox.com/d6/af/fj0dlj4L_o.png) |
-|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | [![Magenizr Raygun](https://images2.imgbox.com/db/da/YPLBhWYC_o.png)](https://images2.imgbox.com/db/da/YPLBhWYC_o.png) | [![Magenizr Raygun](https://images2.imgbox.com/d3/c1/BXstolhs_o.png)](https://images2.imgbox.com/d3/c1/BXstolhs_o.png) | [![Magenizr Raygun](https://images2.imgbox.com/81/64/JJ3kYEaq_o.png)](https://images2.imgbox.com/81/64/JJ3kYEaq_o.png) |
+| [![Magenizr Raygun](https://images2.imgbox.com/c1/db/UmF9qhrA_o.png)](https://images2.imgbox.com/c1/db/UmF9qhrA_o.png) |                                                                                                                        | |
 
 ## Features
 
