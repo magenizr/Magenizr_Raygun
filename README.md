@@ -28,7 +28,7 @@ Connect Magento with [Raygun](https://raygun.com) and never let another error go
 ## System Requirements
 
 - Magento 2.4.x
-- PHP 5.6.x, 7.x, 8.x
+- PHP 7.x, 8.x
 
 ## Installation (Composer 2)
 
