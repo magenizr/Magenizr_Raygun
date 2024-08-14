@@ -144,7 +144,7 @@ class RealUserMonitoring extends Template
      */
     public function getExcludedHostnames()
     {
-        $value = $this->helper->getConfig('real_user_monitoring', 'excluded_hostnames');
+        $value = $this->helper->getConfig('developer', 'excluded_hostnames');
 
         return trim($value);
     }

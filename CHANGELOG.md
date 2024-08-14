@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.1.2 `2024-08-15`
+
+### Changed
+
+- Fix issue with default value for `excluded_hostnames`
+
 ## 1.1.1 `2024-07-06`
 
 ### Changed

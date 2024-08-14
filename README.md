@@ -32,13 +32,13 @@ Connect Magento with [Raygun](https://raygun.com) and never let another error go
 
 ## Installation (Composer 2)
 
-1. Update your composer.json `composer require "magenizr/magento2-raygun":"^1.1.1" --no-update`
+1. Update your composer.json `composer require "magenizr/magento2-raygun":"^1.1.2" --no-update`
 2. Use `composer update magenizr/magento2-raygun --no-install` to update your composer.lock file.
 
 ```
 Updating dependencies
 Lock file operations: 1 install, 1 update, 0 removals
-  - Locking magenizr/magento2-raygun (1.1.1)
+  - Locking magenizr/magento2-raygun (1.1.2)
 ```
 
 3. And then `composer install` to install the package.
@@ -47,7 +47,7 @@ Lock file operations: 1 install, 1 update, 0 removals
 Installing dependencies from lock file (including require-dev)
 Verifying lock file contents can be installed on current platform.
 Package operations: 1 install, 0 update, 0 removals
-  - Installing magenizr/magento2-raygun (1.1.1): Extracting archive
+  - Installing magenizr/magento2-raygun (1.1.2): Extracting archive
 ```
 
 4. Enable the module
