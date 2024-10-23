@@ -1,3 +1,5 @@
+[![Now Available via Adobe Commerce Marketplace](https://images2.imgbox.com/98/17/9vP07LS0_o.png)](https://commercemarketplace.adobe.com/magenizr-official-magento2-raygun.html)
+
 [![Latest Stable Version](https://poser.pugx.org/magenizr/magento2-raygun/v?v=1)](https://packagist.org/packages/magenizr/magento2-raygun) [![Total Downloads](https://poser.pugx.org/magenizr/magento2-raygun/downloads?v=1)](https://packagist.org/packages/magenizr/magento2-raygun) [![Latest Unstable Version](https://poser.pugx.org/magenizr/magento2-raygun/v/unstable?v=1)](https://packagist.org/packages/magenizr/magento2-raygun) [![License](https://poser.pugx.org/magenizr/magento2-raygun/license?v=1)](https://packagist.org/packages/magenizr/magento2-raygun) [![PHP Version Require](https://poser.pugx.org/magenizr/magento2-raygun/require/php?v=1)](https://packagist.org/packages/magenizr/magento2-raygun)
 
 Connect Magento with [Raygun](https://raygun.com) and never let another error go unnoticed again. Monitor your full tech stack across both desktop and mobile, with all the information you need to take action.
